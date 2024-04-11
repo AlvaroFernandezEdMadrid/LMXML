@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE aeropuerto SYSTEM "dos.dtd">
+<factura numero="1" fecha="2002-02-12" importe_total="300" >
+<datos_emisor></datos_emisor>
+<datos_cliente></datos_cliente>
+<datos_detalle>
+<linea>
+</linea>
+<linea>
+</linea>
+</datos_detalle>
+</factura>
