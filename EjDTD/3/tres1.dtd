@@ -1,0 +1,7 @@
+<!ELEMENT liga (partido+)>
+<!ELEMENT partido (equipos+)>
+<!ELEMENT equipos (local, visitante)>
+<!ELEMENT local (nombre, goles)>
+<!ELEMENT visitante (nombre, goles)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT goles (#PCDATA)>

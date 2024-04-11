@@ -3,7 +3,7 @@
 <!ATTLIST factura numero ID #REQUIRED>
 <!ATTLIST factura fecha CDATA #REQUIRED>
 <!ATTLIST factura importe_total CDATA #REQUIRED>
-<!ELEMENT  datos_emisor (nombre, cif, telefono)>
+<!ELEMENT datos_emisor (nombre, cif, telefono)>
 <!ELEMENT datos_cliente (nombre, cif, telefono)>
 <!ELEMENT datos_detalle (linea+)>
 <!ELEMENT nombre (#PCDATA)>
@@ -14,5 +14,5 @@
 <!ATTLIST linea tipo (Libro|DVD|Varios) #IMPLIED>
 <!ELEMENT descripcion (#PCDATA)>
 <!ELEMENT cantidad (#PCDATA)>
-<!ELEMENT oferta (#EMPTY)>
+<!ELEMENT oferta EMPTY>
 <!ELEMENT pvp (#PCDATA)>

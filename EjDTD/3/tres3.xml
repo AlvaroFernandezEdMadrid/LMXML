@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE liga SYSTEM "tres3.dtd">
+<liga>
+    <partido>
+        <equipos>
+            <local nombre="Nottingham Presa" goles="0" />
+            <visitante nombre="Inter de Mitente" goles="1" />
+        </equipos>
+    </partido>
+    <partido>
+        <equipos>
+            <local nombre="Vodka Juniors" goles="3" />
+            <visitante nombre="Sparta da Risa" goles="3" />
+        </equipos>
+    </partido>
+    <partido>
+        <equipos>
+            <local nombre="Water de Múnich" goles="3" />
+            <visitante nombre="Esteaua es del grifo" goles="2" />
+        </equipos>
+    </partido>
+</liga>

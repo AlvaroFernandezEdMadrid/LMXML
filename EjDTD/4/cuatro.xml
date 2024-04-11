@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pedidos SYSTEM "cuatro.dtd">
+<pedidos>
+    <pedido codigo="P1" observ="incompleto">
+        <nombre_trabajador>Juan Pérez</nombre_trabajador>
+        <fecha>2024-04-11</fecha>
+        <plazo_revision>2024-04-15</plazo_revision>
+        <sucursal>
+            <nombre>Sucursal Barcelona</nombre>
+            <direccion>173 Calle Cebolla</direccion>
+        </sucursal>
+        <articulos>
+            <articulo codigo="A1">
+                <unidades>2</unidades>
+                <precio_ud>10.00</precio_ud>
+                <observaciones>Voluminoso</observaciones>
+            </articulo>
+            <articulo codigo="A2">
+                <unidades>1</unidades>
+                <precio_ud>20.00</precio_ud>
+                <observaciones>Pequenio desperfecto</observaciones>
+            </articulo>
+        </articulos>
+    </pedido>
+    <pedido codigo="P2" observ="urgente">
+        <nombre_trabajador>Maria López</nombre_trabajador>
+        <fecha>2024-04-12</fecha>
+        <plazo_revision>2024-04-18</plazo_revision>
+        <sucursal>
+            <nombre>Sucursal Sevilla</nombre>
+            <direccion>789 Avenida Flamenco</direccion>
+        </sucursal>
+        <articulos>
+            <articulo codigo="A3">
+                <unidades>3</unidades>
+                <precio_ud>15.00</precio_ud>
+                <observaciones>Abolladura en la caja</observaciones>
+            </articulo>
+        </articulos>
+    </pedido>
+</pedidos>
