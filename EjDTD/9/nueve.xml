@@ -1,2 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE factura SYSTEM "cuatro.dtd">
+<!DOCTYPE carta SYSTEM "nueve.dtd">
+<carta>
+    <desayuno>
+        <plato calorias="650">
+            <nombre>Gofres Belgas</nombre>
+            <precio moneda="EUR">5.95</precio>
+            <descripcion>Dos de nuestros famosos gofres belgas...</descripcion>
+        </plato>
+        <plato calorias="900">
+            <nombre>Gofres Belgas con fresas</nombre>
+            <precio moneda="EUR">7.95</precio>
+            <descripcion>Ligeros gofres belgas...</descripcion>
+        </plato>
+        <plato calorias="900">
+            <nombre>Gofres Belgas con frutas del bosque</nombre>
+            <precio moneda="EUR">8.95</precio>
+            <descripcion>Ligeros gofres belgas</descripcion>
+        </plato>
+        <plato calorias="600">
+            <nombre>Tostada Francesa</nombre>
+            <precio moneda="EUR">4,50</precio>
+            <descripcion>Dos gruesas rebanadas...</descripcion>
+        </plato>
+        <plato calorias="950">
+            <nombre>Desayuno de la casa</nombre>
+            <precio moneda="EUR">6.95</precio>
+            <descripcion>Dos huevos, bacon...</descripcion>
+        </plato>
+    </desayuno>
+</carta>

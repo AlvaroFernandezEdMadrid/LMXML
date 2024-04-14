@@ -1,0 +1,8 @@
+<!ELEMENT carta (desayuno)>
+<!ELEMENT desayuno (plato*)>
+<!ELEMENT plato (nombre, precio, descripcion)>
+<!ATTLIST plato calorias CDATA #IMPLIED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST precio moneda CDATA #IMPLIED>
+<!ELEMENT descripcion (#PCDATA)>

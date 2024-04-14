@@ -1,0 +1,9 @@
+<!ELEMENT boletines (modulo*)>
+<!ELEMENT modulo (alumno*)>
+<!ATTLIST modulo nombre CDATA #REQUIRED>
+<!ELEMENT alumno (nombre, boletin)>
+<!ATTLIST alumno matricula ID #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT boletin (nota*)>
+<!ELEMENT nota (#PCDATA)>
+<!ATTLIST nota tipo (TEORIA|PRACTICA) #IMPLIED>

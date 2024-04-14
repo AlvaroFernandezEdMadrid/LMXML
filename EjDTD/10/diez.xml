@@ -1,2 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE factura SYSTEM "cuatro.dtd">
+<!DOCTYPE empresa SYSTEM "diez.dtd">
+<empresa>
+    <area nombre="Administracion">
+        <empleado id_empleado="E1968" fecha_comienzo="05/04/2000" fecha_nacimiento="28/09/1973">
+            <apellido>Burgos</apellido>
+            <nombre>Jerónimo</nombre>
+            <cargo>Administrativo</cargo>
+            <salario moneda="EUR">20.000</salario>
+        </empleado>
+        <empleado id_empleado="E1674" fecha_comienzo="25/03/2005" fecha_nacimiento="17/01/1980">
+            <apellido>Villegas</apellido>
+            <nombre>Estefanía</nombre>
+            <cargo>Docente</cargo>
+            <salario moneda="EUR">30.000</salario>
+        </empleado>
+        <empleado id_empleado="E1516" fecha_comienzo="06/03/2010" fecha_nacimiento="26/06/1975">
+            <apellido>Fernández</apellido>
+            <nombre>Guillermo</nombre>
+            <cargo>Docente</cargo>
+            <salario moneda="EUR">30.000</salario>
+        </empleado>
+    </area>
+    <area nombre="Informatica">
+        <empleado id_empleado="E1330" fecha_comienzo="14/02/2011" fecha_nacimiento="17/05/1964">
+            <apellido>Ramírez</apellido>
+            <nombre>Elena</nombre>
+            <cargo>Técnico Laboratorio</cargo>
+            <salario moneda="EUR">25.000</salario>
+        </empleado>
+        <empleado id_empleado="E1285" fecha_comienzo="20/07/2011" fecha_nacimiento="05/04/1990">
+            <apellido>Cortés</apellido>
+            <nombre>Ramiro</nombre>
+            <cargo>Docente</cargo>
+            <salario moneda="EUR">45.000</salario>
+        </empleado>
+        <empleado id_empleado="E1695" fecha_comienzo="03/04/2020" fecha_nacimiento="04/03/1990">
+            <apellido>Mondragón</apellido>
+            <nombre>Unax</nombre>
+            <cargo>Docente</cargo>
+            <salario moneda="EUR">30.000</salario>
+        </empleado>
+        <empleado id_empleado="E1900" fecha_comienzo="16/09/2020" fecha_nacimiento="16/09/1978">
+            <apellido>Alba</apellido>
+            <nombre>Jaime</nombre>
+            <cargo>Docente</cargo>
+            <salario moneda="EUR">50.000</salario>
+        </empleado>
+    </area>
+    <area nombre="Diseño">
+        <empleado id_empleado="E1657" fecha_comienzo="06/06/2001" fecha_nacimiento="19/06/1975">
+            <apellido>Carmona</apellido>
+            <nombre>José</nombre>
+            <cargo>Administrativo</cargo>
+            <salario moneda="EUR">15.000</salario>
+        </empleado>
+        <empleado id_empleado="E1078" fecha_comienzo="19/06/2010" fecha_nacimiento="18/03/1970">
+            <apellido>Arias</apellido>
+            <nombre>Ana</nombre>
+            <cargo>Docente</cargo>
+            <salario moneda="EUR">25.000</salario>
+        </empleado>
+        <empleado id_empleado="E1000" fecha_comienzo="04/03/2020" fecha_nacimiento="03/04/1990">
+            <apellido>García</apellido>
+            <nombre>Juan</nombre>
+            <cargo>Secretario</cargo>
+            <salario moneda="EUR">30.000</salario>
+        </empleado>
+    </area>
+</empresa>

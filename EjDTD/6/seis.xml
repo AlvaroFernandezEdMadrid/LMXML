@@ -1,2 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE factura SYSTEM "cuatro.dtd">
+<!DOCTYPE factura SYSTEM "seis.dtd">
+<factura numero="F999" fecha="2005-01-12" importe_total="1125,20" forma_pago="EFECTIVO">
+    <datos_emisor>
+        <nombre>Equipos Digitales S.L</nombre>
+        <cif>Q-9876543</cif>
+        <telefono>917776688</telefono>
+        <fax>917776699</fax>
+    </datos_emisor>
+    <datos_cliente numero="C879">
+        <nombre>Dario, Bueno Gutierrez</nombre>
+        <direccion>Av. Oporto 40</direccion>
+        <poblacion>Madrid</poblacion>
+        <cod_postal>28043</cod_postal>
+        <provincia>Madrid</provincia>
+    </datos_cliente>
+    <datos_factura>
+        <linea referencia="P001">
+            <descripcion>MICRO PENTIUM IV 300MHZ FB800</descripcion>
+            <cantidad>1</cantidad>
+            <pvp>230.00</pvp>
+            <iva>16%</iva>
+        </linea>
+        <linea referencia="P002">
+            <descripcion>PLACA BASE QDI P4</descripcion>
+            <cantidad>1</cantidad>
+            <pvp>180.00</pvp>
+            <iva>16%</iva>
+        </linea>
+        <linea referencia="P003">
+            <descripcion>DIMM DDR 512MB 3200</descripcion>
+            <cantidad>2</cantidad>
+            <pvp>40.00</pvp>
+            <iva>16%</iva>
+        </linea>
+        <linea referencia="P004">
+            <descripcion>DISCO DURO 250GB S-ATA 7200</descripcion>
+            <cantidad>4</cantidad>
+            <pvp>120.00</pvp>
+            <iva>16%</iva>
+        </linea>
+    </datos_factura>
+</factura>

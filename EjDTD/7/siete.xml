@@ -1,2 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE factura SYSTEM "cuatro.dtd">
+<!DOCTYPE boletines SYSTEM "siete.dtd">
+<boletines>
+    <modulo nombre="SSOO">
+        <alumno matricula="X501">
+            <nombre>Darío Bueno Gutiérrez</nombre>
+            <boletin>
+                <nota tipo="TEORIA">5</nota>
+                <nota tipo="PRACTICA">4,5</nota>
+            </boletin>
+        </alumno>
+        <alumno matricula="X502">
+            <nombre>Rodrigo Vaquero Gutiérrez</nombre>
+            <boletin>
+                <nota tipo="TEORIA">9</nota>
+                <nota tipo="PRACTICA">7</nota>
+            </boletin>
+        </alumno>
+        <alumno matricula="X503">
+            <nombre>Inés Bueno Gutiérrez</nombre>
+            <boletin>
+                <nota tipo="TEORIA">8</nota>
+                <nota tipo="PRACTICA">9</nota>
+            </boletin>
+        </alumno>
+        <alumno matricula="X504">
+            <nombre>Violeta Duro Gutiérrez</nombre>
+            <boletin>
+                <nota tipo="TEORIA">4,5</nota>
+                <nota tipo="PRACTICA">7</nota>
+            </boletin>
+        </alumno>
+    </modulo> 
+</boletines>

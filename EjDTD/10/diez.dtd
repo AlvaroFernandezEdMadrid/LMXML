@@ -1,0 +1,12 @@
+<!ELEMENT empresa (area*)>
+<!ELEMENT area (empleado*)>
+<!ATTLIST area nombre ID #REQUIRED>
+<!ELEMENT empleado (apellido, nombre, cargo?, salario?)>
+<!ATTLIST empleado id_empleado ID #REQUIRED>
+<!ATTLIST empleado fecha_comienzo CDATA #REQUIRED>
+<!ATTLIST empleado fecha_nacimiento CDATA #REQUIRED>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT cargo (#PCDATA)>
+<!ELEMENT salario (#PCDATA)>
+<!ATTLIST salario moneda CDATA #REQUIRED>

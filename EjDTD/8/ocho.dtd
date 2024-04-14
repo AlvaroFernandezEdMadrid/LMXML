@@ -1,0 +1,11 @@
+<!ELEMENT notas (asignatura*)>
+<!ELEMENT asignatura (alumno*)>
+<!ATTLIST asignatura cod_asig ID #REQUIRED>
+<!ATTLIST asignatura nombre CDATA #REQUIRED>
+<!ELEMENT alumno (nombre, direccion, poblacion?, telefono, nota)>
+<!ATTLIST alumno cod_alumno CDATA #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT poblacion (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT nota (#PCDATA)>

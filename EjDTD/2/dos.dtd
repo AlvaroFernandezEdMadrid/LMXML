@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!ELEMENT factura (datos_emisor, datos_cliente, datos_detalle)>
 <!ATTLIST factura numero ID #REQUIRED>
 <!ATTLIST factura fecha CDATA #REQUIRED>

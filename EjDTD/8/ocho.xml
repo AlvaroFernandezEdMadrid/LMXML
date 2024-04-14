@@ -1,2 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE factura SYSTEM "cuatro.dtd">
+<!DOCTYPE notas SYSTEM "ocho.dtd">
+<notas>
+    <asignatura cod_asig="a1" nombre="FH">
+        <alumno cod_alumno="n12344345">
+            <nombre>Luis Alcalde García</nombre>
+            <direccion>Las Manos, 24 Madrid</direccion>
+            <telefono>942756645</telefono>
+            <nota>4</nota>
+        </alumno>
+        <alumno cod_alumno="n43483437">
+            <nombre>González Pérez, Olga</nombre>
+            <direccion>Miraflor 28 - 3ª </direccion>
+            <poblacion>Torres</poblacion>
+            <telefono>942564355.</telefono>
+            <nota>5</nota>
+        </alumno>
+        <alumno cod_alumno="n88234942">
+            <nombre>Fernández Diez, María</nombre>
+            <direccion>Luisa Fernanda 53</direccion>
+            <poblacion>Miera</poblacion>
+            <telefono>942346945</telefono>
+            <nota>8</nota>
+        </alumno>
+    </asignatura>
+    <asignatura cod_asig="a2" nombre="FOL">
+        <alumno cod_alumno="n12344345">
+            <nombre>Luis Alcalde García</nombre>
+            <direccion>Las Manos, 24 Madrid</direccion>
+            <telefono>942756645</telefono>
+            <nota>10</nota>
+        </alumno>
+        <alumno cod_alumno="n43483437">
+            <nombre>González Pérez, Olga</nombre>
+            <direccion>Miraflor 28 - 3ª </direccion>
+            <poblacion>Torres</poblacion>
+            <telefono>942564355.</telefono>
+            <nota>7</nota>
+        </alumno>
+        <alumno cod_alumno="n88234942">
+            <nombre>Fernández Diez, María</nombre>
+            <direccion>Luisa Fernanda 53</direccion>
+            <poblacion>Miera</poblacion>
+            <telefono>942346945</telefono>
+            <nota>6</nota>
+        </alumno>
+    </asignatura>
+    <asignatura cod_asig="a3" nombre="ISO">
+        <alumno cod_alumno="n12344345">
+            <nombre>Luis Alcalde García</nombre>
+            <direccion>Las Manos, 24 Madrid</direccion>
+            <telefono>942756645</telefono>
+            <nota>3</nota>
+        </alumno>
+        <alumno cod_alumno="n88234942">
+            <nombre>Fernández Diez, María</nombre>
+            <direccion>Luisa Fernanda 53</direccion>
+            <poblacion>Miera</poblacion>
+            <telefono>942346945</telefono>
+            <nota>6</nota>
+        </alumno>
+    </asignatura>
+    <asignatura cod_asig="a4" nombre="LMSGI">
+        <alumno cod_alumno="n12344345">
+            <nombre>Luis Alcalde García</nombre>
+            <direccion>Las Manos, 24 Madrid</direccion>
+            <telefono>942756645</telefono>
+            <nota>8</nota>
+        </alumno>
+        <alumno cod_alumno="n43483437">
+            <nombre>González Pérez, Olga</nombre>
+            <direccion>Miraflor 28 - 3ª </direccion>
+            <poblacion>Torres</poblacion>
+            <telefono>942564355.</telefono>
+            <nota>4</nota>
+        </alumno>
+    </asignatura>
+    <asignatura cod_asig="a5" nombre="PAR">
+        <alumno cod_alumno="n12344345">
+            <nombre>Luis Alcalde García</nombre>
+            <direccion>Las Manos, 24 Madrid</direccion>
+            <telefono>942756645</telefono>
+            <nota>6</nota>
+        </alumno>
+    </asignatura>
+    <asignatura cod_asig="a6" nombre="GBD">
+        <alumno cod_alumno="n12344345">
+            <nombre>Luis Alcalde García</nombre>
+            <direccion>Las Manos, 24 Madrid</direccion>
+            <telefono>942756645</telefono>
+            <nota>9</nota>
+        </alumno>
+    </asignatura>
+</notas>
