@@ -1,0 +1,38 @@
+﻿<?xml version="1.0"?>
+<Author xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="uno.xsd">
+<FirstName>Mark</FirstName>
+<LastName>Twain</LastName>
+</Author>
+
+<!-- 
+    PROGRA:
+    Lunes 13 Mayo Desde 17:20
+    Miercoles 22 Mayo ORDINARIA 16:00-21:00
+    Lunes 17 Junio EXTRA-ORDINARIA 16:00-21:00
+
+    ED:
+    Jueves 9 Mayo 15:30-17:20
+    Jueves 24 Mayo ORDINARIA 15:30-18:15
+    Miercoles 12 Junio Extra-ORDINARIA 15:30-18:15
+
+    SSII:
+    Martes 28 Mayo ORDINARIA
+    Martes 18 Junio EXTRA-ORDINARIA 16:00-14:00 (AULA 1.10)
+
+    BBDD:
+    Martes 14 Mayo
+    Jueves 23 Mayo ORDINARIA 18:30-21:15
+    Jueves 13 Junio Extra-ORDINARIA 18:30-21:15
+
+    LM:
+    Jueves 16 Mayo
+    Lunes 27 Mayo ORDINARIA 15:30-18:15
+    Miercoles 12 Junio Extra-ORDINARIA 18:30-21:15
+
+    FOL:
+    Viernes 24 Mayo ORDINARIA 18:30-21:15
+    Viernes 14 Junio EXTRA-ORDINARIA 18:30-21:15
+
+
+-->
