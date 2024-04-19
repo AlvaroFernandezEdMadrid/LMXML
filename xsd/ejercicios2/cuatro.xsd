@@ -1,1 +1,95 @@
- 
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="apellido">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([A-Za-z\s]{1,30})" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="nombre">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([A-Za-z\s]{1,20})" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="identificador">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(U|E){1}\d{1,5}" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="email">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([a-z]{1,15}[@][a-z]{1,25}[.][a-z]{2,4})" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="conexion">
+        <xs:attributeGroup ref="atribConex" />
+    </xs:complexType>
+
+    <xs:attributeGroup name="atribConex">
+        <xs:attribute name="fecha" type="xs:date" use="required" />
+        <xs:attribute name="hora" type="xs:time" use="required" />
+        <xs:attribute name="tiempo" type="xs:positiveInteger" use="required" />
+    </xs:attributeGroup>
+
+    <xs:complexType name="tipoPersona">
+        <xs:sequence>
+            <xs:element name="nombre" type="nombre"></xs:element>
+            <xs:element name="apellido1" type="apellido"></xs:element>
+            <xs:element name="apellido2" type="apellido"></xs:element>
+            <xs:element name="email" type="email"></xs:element>
+            <xs:element name="conexiones">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="conexion" type="conexion" minOccurs="0"
+                            maxOccurs="unbounded" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="id" type="identificador" />
+    </xs:complexType>
+
+    <xs:complexType name="tipoPersonaAmpliado">
+        <xs:complexContent>
+            <xs:extension base="tipoPersona">
+                <xs:sequence>
+                    <xs:element name="departamento">
+                        <xs:complexType>
+                            <xs:choice>
+                                <xs:element name="marketing" />
+                                <xs:element name="administracion" />
+                                <xs:element name="informatica" />
+                            </xs:choice>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:element name="registro">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="usuarios">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="usuario" type="tipoPersona" maxOccurs="unbounded" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="empleados">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="empleado" type="tipoPersonaAmpliado"
+                                maxOccurs="unbounded" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

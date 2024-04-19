@@ -1,1 +1,28 @@
- 
+<?xml version="1.0" encoding="UTF-8"?>
+<factura xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="tres.xsd"
+    numero="19" fecha="2002-02-12" moneda="euro" importe_total="85">
+    <datos_emisor>
+        <nombre>Libreria Coslada</nombre>
+        <cif>12345678-B</cif>
+        <telefono>666000000</telefono>
+    </datos_emisor>
+    <datos_cliente>
+        <nombre>IES Luis Braille</nombre>
+        <cif>87654321-A</cif>
+        <telefono>606606606</telefono>
+    </datos_cliente>
+    <datos_detalle>
+        <linea codigo_art="AW7" tipo="Libro">
+            <descripcion>Aplicaciones Web</descripcion>
+            <cantidad>2</cantidad>
+            <oferta/>
+            <pvp>25</pvp>
+        </linea>
+        <linea codigo_art="LM5">
+            <descripcion>Lenguaje de Marcas</descripcion>
+            <cantidad>1</cantidad>
+            <pvp>30</pvp>
+        </linea>
+    </datos_detalle>
+</factura>

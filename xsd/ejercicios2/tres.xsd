@@ -1,1 +1,77 @@
- 
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="tipo_art">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Libro" />
+            <xs:enumeration value="DVD" />
+            <xs:enumeration value="Varios" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="telefono">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([0-9]{9})" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="cif">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([1-9]{8}-[A-Z])" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipoTexto">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="5"></xs:minLength>
+            <xs:maxLength value="20"></xs:maxLength>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:group name="datosLinea">
+        <xs:sequence>
+            <xs:element name="descripcion" type="tipoTexto" />
+            <xs:element name="cantidad" type="xs:positiveInteger" />
+            <xs:element name="oferta" minOccurs="0" maxOccurs="1" />
+            <xs:element name="pvp" type="xs:decimal" />
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="atribLinea">
+        <xs:attribute name="codigo_art" type="xs:ID" use="required" />
+        <xs:attribute name="tipo" type="tipo_art" />
+    </xs:attributeGroup>
+    <xs:element name="factura">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="datos_emisor">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="tipoTexto" />
+                            <xs:element name="cif" type="cif" />
+                            <xs:element name="telefono" type="telefono" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="datos_cliente">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="tipoTexto" />
+                            <xs:element name="cif" type="cif" />
+                            <xs:element name="telefono" type="telefono" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="datos_detalle">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="linea" minOccurs="1" maxOccurs="15">
+                                <xs:complexType>
+                                    <xs:group ref="datosLinea" minOccurs="1" maxOccurs="15"/>
+                                    <xs:attributeGroup ref="atribLinea"></xs:attributeGroup>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:all>
+            <xs:attribute name="numero" type="xs:positiveInteger" use="required" />
+            <xs:attribute name="fecha" type="xs:date" use="required" />
+            <xs:attribute name="importe_total" type="xs:decimal" use="required" />
+            <xs:attribute name="moneda" type="xs:string" fixed="euro" />
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

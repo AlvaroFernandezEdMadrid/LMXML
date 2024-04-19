@@ -1,1 +1,39 @@
- 
+<?xml version="1.0" encoding="UTF-8"?>
+<registro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="cuatro.xsd">
+    <usuarios>
+        <usuario id="U123">
+            <nombre>Ana</nombre>
+            <apellido1>Sanz</apellido1>
+            <apellido2>Tapia</apellido2>
+            <email>asanz@jmail.com</email>
+            <conexiones>
+                <conexion fecha="2014-02-23" hora="19:15:40" tiempo="122" />
+                <conexion fecha="2014-02-23" hora="20:30:22" tiempo="617" />
+                <conexion fecha="2014-02-24" hora="11:18:31" tiempo="25" />
+            </conexiones>
+        </usuario>
+        <usuario id="U96">
+            <nombre>Pedro</nombre>
+            <apellido1>Ruiz</apellido1>
+            <apellido2>Hierro</apellido2>
+            <email>pruiz@jotmail.com</email>
+            <conexiones>
+                <conexion fecha="2014-02-25" hora="20:33:55" tiempo="390" />
+            </conexiones>
+        </usuario>
+    </usuarios>
+    <empleados>
+        <empleado id="E4">
+            <nombre>Marta</nombre>
+            <apellido1>Vera</apellido1>
+            <apellido2>Gil</apellido2>
+            <email>mvera@yajooo.es</email>
+            <conexiones>
+            </conexiones>
+            <departamento>
+                <marketing/>
+            </departamento>
+        </empleado>
+    </empleados>
+</registro>
